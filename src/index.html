@@ -13,6 +13,10 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/rlv7ntg.css" />
 
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
     <link rel="stylesheet" href="https://use.typekit.net/rlv7ntg.css" />
   </head>
   <body>
@@ -23,7 +27,7 @@
       <div class="nav">
         <img src="img/logo.svg" alt="Logo label" />
         <div class="menu">
-          <a href="#">Artist</a>
+          <a href="Page-artiste.html">Artist</a>
           <a href="#">Shop</a>
           <a href="#">About</a>
           <a href="#">Contact</a>
@@ -51,37 +55,91 @@
 
     <content>
       <section class="title-artists">
-      <h2 class="our">OUR</h2>
-      <h2 class="Artist">Artits</section>
-        <img src="img/trace.svg" alt="">
+          <h2 class="text-our">OUR</h2>
+          <h2 class="text-artists">Artists</h2>
+          </div>
+          <img src="img/trace.svg" alt="" />
         </section>
-      <section class="carousel">
-            <div class="Artista-1">
-              <img src="img/Artist1.png" alt="Artista 1" />
-              <div class="slide-info">
-                <h3 class="artist-name">Isaiah Rashad</h3>
-                <p class="artist-genre">Hip hop / Rap</p>
-              </div>
 
-              <div class="Artista-2">
-              <img src="img/Artist.png" alt="Artista 1" />
-              <div class="slide-info">
-                <h3 class="artist-name">Isaiah Rashad</h3>
-                <p class="artist-genre">Hip hop / Rap</p>
-              </div>
-
-              <div class="Artista-3">
-              <img src="img/Artist-2.png" alt="Artista 1" />
-              <div class="slide-info">
-                <h3 class="artist-name">Isaiah Rashad</h3>
-                <p class="artist-genre">Hip hop / Rap</p>
-              </div>
-        </div>
-
-        <button>Explore Artists</button>
-      </section>
+      <section class="carousel-section">
+  <div class="owl-carousel custom-carousel owl-theme">
+    <div class="item active" style="background-image: url(img/isaish.svg);">
+      <div class="item-desc">
+        <h3 class="artist-name">Isaiah Rashad</h3>
+        <p class="artist-genre">Hip hop / Rap</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(img/Lance.svg);">
+      <div class="item-desc">
+        <h3 class="artist-name">Lance Skyiiwalker</h3>
+        <p class="artist-genre">Rap / Alternative hip hop</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(img/schoolboy.svg);">
+      <div class="item-desc">
+        <h3 class="artist-name">ScHoolboy Q</h3>
+        <p class="artist-genre">Rap / hip hop  </p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(img/SZA.svg);">
+      <div class="item-desc">
+        <h3 class="artist-name">SZA</h3>
+        <p class="artist-genre">Hip hop / R&B</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(img/AB-soul.svg);">
+      <div class="item-desc">
+        <h3 class="artist-name">AB-SOUL</h3>
+        <p class="artist-genre">Hip hop / Rap </p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(img/doechii.svg);">
+      <div class="item-desc">
+        <h3 class="artist-name">Doechii</h3>
+        <p class="artist-genre">Rap / Hip hop</p>
+      </div>
+    </div>
+     <div class="item" style="background-image: url(img/SiR.svg);">
+      <div class="item-desc">
+        <h3 class="artist-name">Sir</h3>
+        <p class="artist-genre">R&B / Soul</p>
+  </div>
+    </div>
+    <div class="item" style="background-image: url(img/Ray.svg);">
+      <div class="item-desc">
+        <h3 class="artist-name">Ray</h3>
+        <p class="artist-genre">Hip hop / R&B </p>
+ </div>
+  </div>
+  <div class="item" style="background-image: url(img/ZACARI.svg);">
+      <div class="item-desc">
+        <h3 class="artist-name">Zacari</h3>
+        <p class="artist-genre">R&B / Alternative</p>
+ </div>
+  </div>
+    <div class="item" style="background-image: url(img/ALEMEDA.svg);">
+      <div class="item-desc">
+        <h3 class="artist-name">Alemeda</h3>
+        <p class="artist-genre">Hip hop / R&B </p>
+ </div>
+  </div>
+    
+    <div class="item" style="background-image: url(img/JR.svg);">
+      <div class="item-desc">
+        <h3 class="artist-name">Jay Rock</h3>
+        <p class="artist-genre">Hip hop / Rap </p>
+ </div>
+  </div>
+        </section>
+                <button>Explore Artists</button>
     </content>
+
     <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="js/script.js"></script>
 
     <script src="js/main.js" type="module"></script>
   </body>

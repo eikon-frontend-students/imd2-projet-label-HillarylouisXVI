@@ -96,7 +96,6 @@ header {
   gap: 2rem;
   width: 100%;
   height: 100%;
-  padding: 40px;
 }
 
 .hero-content .content {
@@ -105,6 +104,7 @@ header {
 button {
   font-family: "pf-fuel-grime", sans-serif;
   color: #ffffff;
+  width: 158.26px;
   padding: 9.157px 36.628px;
   justify-content: center;
   align-items: center;
@@ -161,11 +161,277 @@ header::after {
   cursor: pointer;
   display: none;
 }
-.carousel {
+.title-artists {
   display: flex;
+  align-items: center;
+  padding-left: 182px;
+  align-items: center;
+  gap: var(--Space-space-30, 30px);
+  align-self: stretch;
+}
+
+.text-our {
+  display: flex;
+  align-items: center;
+  font-family: "cherry-blossoms-tight", sans-serif;
+  color: var(--Primary-red-100, #c90202);
+  font-size: var(--type-87, 87px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercas;
+  margin: 0px 0px 50px 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.text-artists {
+  font-family: "pf-fuel-grime", sans-serif;
+  font-size: var(--type-65, 65px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 0px 0px -80px;
+}
+
+.slide-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 250px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/*C'est ici que commence mon carrousel */
+.carousel-section .artist-name {
+  font-family: "pf-fuel-grime", sans-serif;
+  font-size: var(--type-49, 30px);
+  font-style: normal;
+  line-height: var(--Space-space-50, 50px);
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+.carousel-section .artist-genre {
+  font-family: "cherry-blossoms-tight", sans-serif;
+  font-size: var(--type-21, 21px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #ff341d;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+a:focus,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+.carousel-section {
+  position: relative;
+  padding: 60px 50px;
+}
+.carousel-section .owl-stage {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.carousel-section .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.carousel-section .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.carousel-section .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.carousel-section .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.carousel-section .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+.carousel-section .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.carousel-section .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.carousel-section .owl-theme.custom-carousel .owl-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 18px;
+  display: flex;
+  gap: 10px;
   justify-content: center;
-  gap: 2rem;
-  margin-bottom: 100px;
+  align-items: center;
+  z-index: 5;
+  margin: 0;
+  width: auto;
+}
+
+.carousel-section .owl-dots .owl-dot,
+.carousel-section .owl-dots .owl-dot span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.carousel-section .owl-dots .owl-dot {
+  background: transparent;
+}
+.carousel-section .owl-dots .owl-dot span {
+  background: rgba(255, 255, 255, 0.35);
+  transition: transform 0.18s ease, background 0.18s ease, opacity 0.18s ease;
+}
+.carousel-section .owl-dots .owl-dot.active span {
+  background: #ffffff;
+  transform: scale(1.35);
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .carousel-section {
+    padding: 50px 30px;
+  }
+  .carousel-section .item {
+    margin: 0 12px 60px;
+    width: 260px;
+    height: 360px;
+  }
+  .carousel-section .item.active {
+    width: 400px;
+  }
+  .carousel-section .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .line-title {
+    width: 330px;
+  }
+
+  .carousel-section {
+    padding: 50px 30px 40px;
+  }
+  .carousel-section .item {
+    margin: 0 12px 60px;
+    width: 240px;
+    height: 330px;
+  }
+  .carousel-section .item.active {
+    width: 360px;
+  }
+  .carousel-section .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .line-title {
+    width: 250px;
+  }
+
+  .carousel-section {
+    padding: 30px 15px 20px;
+  }
+  .carousel-section .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
+  }
+  .carousel-section .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .carousel-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
 }
 
 @media (min-width: 900px) {
