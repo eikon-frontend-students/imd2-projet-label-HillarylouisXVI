@@ -126,7 +126,7 @@ button {
   border: 0.2px solid var(--neutral-white-100, #fff);
   background: var(--neutral-white-18, rgba(255, 255, 255, 0.18));
 }
-
+.hero-image,
 .hero-video {
   position: absolute;
   inset: 0;
