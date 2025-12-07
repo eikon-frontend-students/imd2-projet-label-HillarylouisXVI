@@ -13,12 +13,12 @@ video {
   display: block;
 }
 body {
-  font-family: "Gabarito", sans-serif;
+  font-family: "Gabarito-regular", sans-serif;
   background-color: #181818;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: var(--Space-space-136, 136px);
+  gap: 136px;
 }
 
 .nav {
@@ -106,12 +106,11 @@ button {
   color: #ffffff;
   width: 158.26px;
   padding: 9.157px 36.628px;
-  justify-content: center;
-  align-items: center;
   gap: 6.12px;
   border-radius: 12.179px;
   background: #c90202;
   border: none;
+  cursor: pointer;
 }
 .arrow-left,
 .arrow-right {
@@ -166,7 +165,7 @@ header::after {
   align-items: center;
   padding-left: 182px;
   align-items: center;
-  gap: var(--Space-space-30, 30px);
+  gap: 30px;
   align-self: stretch;
 }
 
@@ -208,7 +207,6 @@ header::after {
   border-radius: 8px;
 }
 
-/*C'est ici que commence mon carrousel */
 .carousel-section .artist-name {
   font-family: "pf-fuel-grime", sans-serif;
   font-size: var(--type-49, 30px);
@@ -234,6 +232,7 @@ a {
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
 }
+
 a:focus,
 a:active,
 a:visited,
@@ -279,7 +278,7 @@ a:hover {
   width: 100%;
   left: 0;
   top: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 .carousel-section .item-desc {
   padding: 0 24px 12px;
@@ -339,6 +338,72 @@ a:hover {
 .carousel-section .owl-dots .owl-dot.active span {
   background: #ffffff;
   transform: scale(1.35);
+}
+.explore-artists {
+  display: block;
+  margin: 0 auto;
+}
+.abaut-us {
+  margin-top: 136px;
+}
+.text-a,
+.text-c {
+  font-family: "cherry-blossoms-tight", sans-serif;
+  color: var(--Primary-red-100, #c90202);
+  font-size: var(--type-65, 65px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px 0px -80px 180px;
+  position: relative;
+}
+
+.text-about,
+.text-contact {
+  font-family: "pf-fuel-grime", sans-serif;
+  font-size: var(--type-49, 49px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px 0px 0px 200px;
+}
+.text-about-p,
+.text-contact-p {
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 219px;
+  flex-shrink: 0;
+  align-self: stretch;
+  margin: 50px 180px 50px 180px;
+}
+.highlight {
+  color: #ff341d;
+  font-weight: bold;
+}
+.read-more {
+  display: block;
+  margin: 0 auto;
+  background: none;
+  border-radius: 0px;
+  border: none;
+  padding: 5px 0;
+  width: 60px;
+  border-bottom: 1px solid #ec282a;
+}
+.button-contact {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 180px;
+  margin: 0 auto;
+}
+.professional-contact {
+  width: 189px;
+}
+.submit-demo {
+  background-color: #ff341d;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
