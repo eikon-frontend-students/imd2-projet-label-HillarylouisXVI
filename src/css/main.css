@@ -160,7 +160,8 @@ header::after {
   cursor: pointer;
   display: none;
 }
-.title-artists {
+.title-artists,
+.title-shop {
   display: flex;
   align-items: center;
   padding-left: 182px;
@@ -169,12 +170,11 @@ header::after {
   align-self: stretch;
 }
 
-.text-our {
-  display: flex;
-  align-items: center;
+.text-our,
+.text-s {
   font-family: "cherry-blossoms-tight", sans-serif;
-  color: var(--Primary-red-100, #c90202);
-  font-size: var(--type-87, 87px);
+  color: #c90202;
+  font-size: 87px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -184,7 +184,12 @@ header::after {
   z-index: 1;
 }
 
-.text-artists {
+.text-s {
+  margin: 10px 30px 0px 0px;
+}
+
+.text-artists,
+.text-shop {
   font-family: "pf-fuel-grime", sans-serif;
   font-size: var(--type-65, 65px);
   font-style: normal;
@@ -225,6 +230,7 @@ header::after {
   color: #ff341d;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -339,9 +345,17 @@ a:hover {
   background: #ffffff;
   transform: scale(1.35);
 }
-.explore-artists {
+.explore-artists,
+.full-store {
   display: block;
   margin: 0 auto;
+}
+
+.img-tde {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: -550px;
 }
 .abaut-us {
   margin-top: 136px;
@@ -404,6 +418,45 @@ a:hover {
 }
 .submit-demo {
   background-color: #ff341d;
+}
+
+footer {
+  background-color: #000000;
+  padding: 60px 39px 0px 39px;
+}
+.arrow-right-footer {
+  width: 20px;
+  height: 19px;
+  padding: 3.92px;
+  background-color: #000000;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 12px;
+  padding: 20px 0px;
+}
+.legal-links {
+  display: flex;
+  gap: 50px;
+}
+.legal-links a:hover {
+  color: #c90202;
+}
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-links,
+.social-icons {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.footer-logo {
+  filter: invert(100%);
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
