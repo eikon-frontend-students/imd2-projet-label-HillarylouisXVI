@@ -254,7 +254,8 @@ button:focus-visible {
 }
 .title-artists,
 .title-shop,
-.title-video {
+.title-video,
+.title-albums {
   display: flex;
   align-items: center;
   padding-left: 182px;
@@ -265,7 +266,8 @@ button:focus-visible {
 
 .text-our,
 .text-s,
-.text-v {
+.text-v,
+.text-a-albums {
   font-family: "cherry-blossoms-tight", sans-serif;
   color: #c90202;
   font-size: 87px;
@@ -277,17 +279,22 @@ button:focus-visible {
   position: relative;
   z-index: 1;
 }
-.text-v {
-  margin: 10px 30px 0px 0px;
-}
-
+.text-v,
 .text-s {
   margin: 10px 30px 0px 0px;
 }
 
+.text-a-albums {
+  margin: 15px 35px 0px 0px;
+}
+.title-albums {
+  margin-top: 136px;
+}
+
 .text-artists,
 .text-shop,
-.text-video {
+.text-video,
+.text-albums {
   font-family: "pf-fuel-grime", sans-serif;
   font-size: var(--type-65, 65px);
   font-style: normal;
@@ -309,7 +316,8 @@ button:focus-visible {
   padding: 10px;
   border-radius: 8px;
 }
-.videos {
+.videos,
+.albums {
   display: flex;
   width: 1157px;
   align-items: center;
@@ -320,6 +328,11 @@ button:focus-visible {
 .img-videos {
   width: 358.389px;
   height: 295.758px;
+  border-radius: 16px;
+}
+.img-albums {
+  width: 356px;
+  height: 360px;
   border-radius: 16px;
 }
 .carousel-section .artist-name {
@@ -490,7 +503,8 @@ a:hover {
 }
 
 .text-about,
-.text-contact {
+.text-contact,
+.text-about-doechii {
   font-family: "pf-fuel-grime", sans-serif;
   font-size: var(--type-49, 49px);
   font-style: normal;
@@ -523,6 +537,21 @@ a:hover {
   width: 60px;
   border-bottom: 1px solid #ec282a;
 }
+.social-icons-doechii {
+  display: flex;
+  align-items: center;
+  margin-left: 180px;
+  gap: 30px;
+  cursor: pointer;
+  transition: box-shadow 220ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 200ms ease, border-color 200ms ease, background-color 200ms ease;
+  will-change: transform, box-shadow;
+}
+
+.social-logo-doechii {
+  margin-top: 50px;
+}
+
 .button-contact {
   display: flex;
   align-content: center;
