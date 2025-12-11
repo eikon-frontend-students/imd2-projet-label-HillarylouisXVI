@@ -172,6 +172,9 @@ header {
   padding: 1rem 2rem;
   margin-top: 300px;
 }
+.hero-content > :last-child {
+  margin-left: auto;
+}
 
 button {
   font-family: "pf-fuel-grime", sans-serif;
@@ -239,9 +242,6 @@ button:focus-visible {
   opacity: 0.5;
 }
 
-.content {
-  margin-right: auto;
-}
 .nav,
 .content {
   position: relative;
@@ -552,6 +552,12 @@ a:hover {
   margin-top: 50px;
 }
 
+.doechii-tours {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .button-contact {
   display: flex;
   align-content: center;
@@ -570,12 +576,15 @@ footer {
   background-color: #000000;
   padding: 60px 39px 0px 39px;
 }
+
 .text-newletter {
   font-family: "pf-fuel-grime", sans-serif;
-  font-size: var(--type-21, 21px);
+  font-size: 21px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  align-self: stretch;
+  width: 265px;
 }
 .email-form input {
   padding: 10px;
@@ -627,6 +636,12 @@ footer {
 }
 .logo-nav-artist {
   margin-top: 0px;
+}
+.email-form {
+  display: flex;
+}
+.email-form > :last-child {
+  margin-left: auto;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
