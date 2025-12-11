@@ -4,33 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/rlv7ntg.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link rel="stylesheet" href="https://use.typekit.net/rlv7ntg.css" />
     <title>Page de l'artiste</title>
   </head>
   <body>
-    <div class="hero-image">
-    <img src="img/Hero-doechii.svg" alt=""></div>
+    <header>
+      <img class="hero-image" src="img/Hero-doechii.svg" type="video/mp4" />
       <div class="nav">
-        <img src="img/logo.svg" alt="Logo label" />
+        <img src="img/logo.svg" alt="Logo label" class="logo-nav-artist" />
         <div class="menu">
-          <a href="">Artist</a>
-          <a href="#">Shop</a>
+          <a href="Page-artiste.html">Artist</a>
+          <a href="https://txdxe.com/collections/all">Shop</a>
           <a href="#">About</a>
-          <a href="#">Contact</a>
-          <img src="img/search.svg" alt="Search" />
+          <a href="https://txdxe.com/pages/contact">Contact</a>
+          <div class="search-reveal">
+            <button class="icon" aria-label="Open search">
+              <img src="img/search.svg" class="search-icon" />
+            </button>
+            <input type="text" placeholder="Search…" />
+          </div>
+
           <div class="burger">
             <img src="img/bars.svg" alt="bars" />
           </div>
         </div>
       </div>
       <div class="hero-content">
-      
         <div class="content">
-          <p class="gere">HIP HOP/ Rap</p>
-          <h1>DOECHII</h1>
+          <p class="gere-doechii">HIP HOP/ RAP</p>
+          <h1 class="doechii">DOECHII</h1>
+          <button class="newsletter">Join the newsletter</button>
         </div>
-                  <button class="newsletter">Join the newsletter</button>
       </div>
     </header>
+
+    <content>
+      <section class="title-video">
+        <h2 class="text-v">V</h2>
+        <h2 class="text-video">Videos</h2>
+        <img src="img/trace.svg" alt="" />
+      </section>
+      <section class="videos">
+        <img src="img/video1.jpg" alt="video-doechii1" class="img-videos" />
+        <img src="img/video2.jpg" alt="video-doechii2" class="img-videos" />
+        <img src="img/video3.jpg" alt="video-doechii3" class="img-videos" />
+      </section>
+      <button class="see-all-videos">See all videos</button>
+    </content>
   </body>
 </html>
