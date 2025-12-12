@@ -172,6 +172,15 @@ header {
   padding: 1rem 2rem;
   margin-top: 300px;
 }
+.hero-content-doechii {
+  position: relative;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  margin-top: 300px;
+}
+
 .hero-content > :last-child {
   margin-left: auto;
 }
@@ -527,7 +536,8 @@ a:hover {
   color: #ff341d;
   font-weight: bold;
 }
-.read-more {
+.read-more,
+.buy-tickets {
   display: block;
   margin: 0 auto;
   background: none;
@@ -537,6 +547,7 @@ a:hover {
   width: 60px;
   border-bottom: 1px solid #ec282a;
 }
+
 .social-icons-doechii {
   display: flex;
   align-items: center;
