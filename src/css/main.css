@@ -118,7 +118,6 @@ h1 {
 .doechii {
   position: relative;
   margin-left: 150px;
-  margin-top: -50px;
   font-size: 153px;
   margin-top: -110px;
 }
@@ -699,9 +698,6 @@ footer {
 .email-form {
   display: flex;
 }
-.email-form > :last-child {
-  margin-left: auto;
-}
 
 @media (max-width: 700px) {
   .tour-1 {
@@ -815,7 +811,6 @@ footer {
   }
 }
 
-/* Responsive adjustments */
 /* mobile */
 @media (max-width: 768px) {
   body {
@@ -1052,21 +1047,12 @@ footer {
     padding: 1rem 1.5rem;
   }
 
-  .logo-nav {
-    width: 100px;
-    height: 102px;
-  }
-
-  .menu a {
-    display: inline; /* Show menu links on tablet */
-  }
-
   .search-reveal {
-    display: inline-flex; /* Show search on tablet */
+    display: inline-flex;
   }
 
   .burger {
-    display: none; /* Hide burger on tablet */
+    display: none;
   }
 
   .menu {
@@ -1075,15 +1061,7 @@ footer {
 
   .hero-content {
     margin-top: 200px;
-    padding: 1rem 1.5rem;
-  }
-
-  .gere {
-    font-size: 55px;
-  }
-
-  h1 {
-    font-size: 70px;
+    padding: 1rem 1rem;
   }
 
   .info {
@@ -1092,28 +1070,144 @@ footer {
 
   .arrow-left,
   .arrow-right {
-    width: 71px; /* Normal size on tablet */
+    width: 71px;
     height: 28px;
+  }
+
+  .gere-doechii {
+    font-size: 80px;
+    margin-left: 60px;
+  }
+
+  .doechii {
+    font-size: 110px;
+    margin-left: 100px;
+    margin-top: -80px;
+  }
+
+  .hero-content-doechii {
+    margin-top: 200px;
+    padding: 1rem 1.5rem;
+  }
+
+  .title-artists,
+  .title-shop,
+  .title-video,
+  .title-albums {
+    padding-left: 100px;
+    gap: 1rem;
+  }
+
+  .text-our,
+  .text-s,
+  .text-v,
+  .text-a-albums {
+    font-size: 60px;
+    margin: 0px 20px 30px 0px;
+  }
+
+  .text-artists,
+  .text-shop,
+  .text-video,
+  .text-albums {
+    font-size: 45px;
+    margin: 0px 0px 0px -40px;
+  }
+
+  .videos,
+  .albums {
+    width: 100%;
+    max-width: 800px;
+    gap: 30px;
+  }
+
+  .img-videos {
+    width: 250px;
+    height: 200px;
+  }
+
+  .img-albums {
+    width: 250px;
+    height: 220px;
+  }
+
+  .abaut-us {
+    margin-top: 80px;
+  }
+
+  .text-a,
+  .text-c {
+    font-size: 50px;
+    margin: 0px 0px -50px 120px;
+  }
+
+  .text-about,
+  .text-contact,
+  .text-about-doechii {
+    font-size: 35px;
+    margin: 0px 0px 0px 140px;
+  }
+
+  .text-about-p,
+  .text-contact-p {
+    font-size: 25px;
+    margin: 50px 120px;
+    height: auto;
+  }
+
+  .social-icons-doechii {
+    margin-left: 120px;
+    gap: 20px;
+  }
+
+  .doechii-tours {
+    max-width: 600px;
+  }
+
+  footer {
+    padding: 40px 20px 0;
+  }
+
+  .text-newletter {
+    font-size: 18px;
+    width: 220px;
+  }
+
+  .email-form input {
+    width: 200px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+    padding: 15px 0;
+  }
+
+  .legal-links {
+    gap: 40px;
+  }
+
+  .trace {
+    width: 500px;
   }
 }
 
 /* desktop */
 @media (min-width: 1025px) {
   .menu a {
-    display: inline; /* Show menu links on desktop */
+    display: inline;
   }
 
   .search-reveal {
-    display: inline-flex; /* Show search on desktop */
+    display: inline-flex;
   }
 
   .burger {
-    display: none; /* Hide burger on desktop */
+    display: none;
   }
 
   .arrow-left,
   .arrow-right {
-    width: 71px; /* Normal size on desktop */
+    width: 71px;
     height: 28px;
   }
 }
