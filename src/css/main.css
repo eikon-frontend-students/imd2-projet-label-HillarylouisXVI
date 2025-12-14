@@ -47,7 +47,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1.5px solid #e5e7eb;
+  border: 1.5px solid #e5e7ebb8;
   border-radius: 999px;
   padding: 6px 10px;
   transition: box-shadow 0.2s, border-color 0.2s;
@@ -138,6 +138,7 @@ h1 {
   display: flex;
   align-items: center;
   gap: 1.25rem;
+  position: relative;
 }
 
 .menu a {
@@ -199,6 +200,10 @@ button {
     transform 200ms ease, border-color 200ms ease, background-color 200ms ease;
   will-change: transform, box-shadow;
 }
+button.Whact {
+  width: auto;
+  padding: 10px 20px;
+}
 
 button:hover,
 button:focus {
@@ -221,7 +226,7 @@ button:focus-visible {
 .newsletter {
   width: 167px;
   height: 37px;
-  margin-left: 150px;
+  margin-left: 40px;
 }
 
 .arrow-left,
@@ -256,10 +261,10 @@ button:focus-visible {
   position: relative;
   z-index: 1;
 }
-.burger {
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
+
+.burger img {
+  width: 25px;
+  height: 25px;
 }
 .title-artists,
 .title-shop,
@@ -577,7 +582,7 @@ a:hover {
   max-width: 820px;
   width: 100%;
 }
-.Tour {
+.tour {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -810,32 +815,305 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    margin: -50px 0px 0px 0px;
+/* Responsive adjustments */
+/* mobile */
+@media (max-width: 768px) {
+  body {
+    gap: 45px;
   }
-  .gere {
-    font-size: 50px;
-  }
-
   header {
     min-height: 50vh;
   }
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
+  button {
+    width: 150px;
+    padding: 5px 20px;
+    gap: 6.12px;
+    border-radius: 10px;
+  }
+  .read-more,
+  .see-all-videos,
+  .explore-artists,
+  .full-store {
+    margin-top: 20px;
+  }
+  .see-all-videos .nav {
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .logo-nav {
+    width: 80px;
+    height: 82px;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+  .search-reveal {
+    display: inline-flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .hero-content {
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .gere {
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin: -40px 0 0 0;
+  }
+  .gere-doechii {
+    font-size: 80px;
+    margin-left: 40px;
+  }
+  .doechii {
+    font-size: 90px;
+    margin-left: 80px;
+    margin-top: -70px;
+  }
+  .hero-content-doechii {
+    position: relative;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    margin-top: 100px;
+  }
+  .newsletter {
+    width: 180px;
+    height: 30px;
+  }
+
+  .info {
+    font-size: 25px;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    width: 50px;
+    height: 20px;
+  }
+
+  .title-artists,
+  .title-shop,
+  .title-video,
+  .title-albums {
+    padding-left: 50px;
     gap: 0.5rem;
   }
 
-  .nav {
-    margin: auto;
-    flex-direction: row;
+  .text-our,
+  .text-s,
+  .text-v,
+  .text-a-albums {
+    font-size: 40px;
+    margin: 0px -25px 30px 0px;
   }
-  .hero-content {
+  .text-v,
+  .text-s {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .text-a-albums {
+    margin: 15px 35px 0px 0px;
+  }
+  .title-albums {
+    margin-top: 45px;
+  }
+
+  .text-artists,
+  .text-shop,
+  .text-video {
+    font-size: 35px;
+    margin: 0px 0px 0px -10px;
+  }
+
+  .text-albums {
+    font-size: 35px;
+    margin: 7px 0px 0px -50px;
+  }
+
+  button.Whact {
+    width: auto;
+    padding: 8px 20px;
+  }
+
+  .trace {
+    width: 400px;
+  }
+  .videos,
+  .albums {
+    flex-direction: column;
+    width: 200px;
+  }
+  .img-videos {
+    width: 300px;
+    height: 250px;
+  }
+
+  .img-albums {
+    width: 300px;
+    height: 300px;
+  }
+  .img-tde {
+    margin-bottom: -330px;
+    margin-top: -150px;
+    width: 550px;
+  }
+  .text-a,
+  .text-c {
+    font-size: 30px;
+    margin: 0px 0px -40px 100px;
+  }
+
+  .text-about,
+  .text-contact,
+  .text-about-doechii {
+    font-size: 30px;
+    margin: 0px 0px 0px 109px;
+  }
+  .text-about-p,
+  .text-contact-p {
+    font-size: 20px;
+    margin: 50px 100px;
+    height: 120px;
+  }
+
+  .buy-tickets {
+    padding: 5px 0;
+    width: 40px;
+  }
+
+  .social-icons-doechii {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 70px;
+    gap: 30px;
+  }
+
+  .social-logo-doechii {
     margin-top: 50px;
+  }
+
+  .doechii-tours {
+    max-width: 820px;
+    width: 100%;
+  }
+  .tour {
+    align-items: center;
+    gap: 24px;
+  }
+  footer {
+    padding: 30px 15px 0px 15px;
+  }
+
+  .text-newletter {
+    font-size: 15px;
+    width: 200px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+    padding: 10px 0px;
+  }
+  .legal-links {
+    gap: 30px;
+  }
+
+  .footer-logo,
+  .logo-nav-artist {
+    width: 66px;
+    height: 69px;
+  }
+  .footer-logo {
+    margin-top: 10px;
+  }
+  .newsletter-footer {
+    width: 140px;
+    height: 25px;
+    margin-left: 15px;
+  }
+}
+/* tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo-nav {
+    width: 100px;
+    height: 102px;
+  }
+
+  .menu a {
+    display: inline; /* Show menu links on tablet */
+  }
+
+  .search-reveal {
+    display: inline-flex; /* Show search on tablet */
+  }
+
+  .burger {
+    display: none; /* Hide burger on tablet */
+  }
+
+  .menu {
+    gap: 1rem;
+  }
+
+  .hero-content {
+    margin-top: 200px;
+    padding: 1rem 1.5rem;
+  }
+
+  .gere {
+    font-size: 55px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .info {
+    font-size: 30px;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    width: 71px; /* Normal size on tablet */
+    height: 28px;
+  }
+}
+
+/* desktop */
+@media (min-width: 1025px) {
+  .menu a {
+    display: inline; /* Show menu links on desktop */
+  }
+
+  .search-reveal {
+    display: inline-flex; /* Show search on desktop */
+  }
+
+  .burger {
+    display: none; /* Hide burger on desktop */
+  }
+
+  .arrow-left,
+  .arrow-right {
+    width: 71px; /* Normal size on desktop */
+    height: 28px;
   }
 }
