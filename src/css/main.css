@@ -199,15 +199,11 @@ button {
     transform 200ms ease, border-color 200ms ease, background-color 200ms ease;
   will-change: transform, box-shadow;
 }
-button.Whact {
-  width: auto;
-  padding: 10px 20px;
-}
 
 button:hover,
 button:focus {
   border-radius: 12px;
-  border: 1px solid var(--Primary-red-100-2, #ec282a);
+  border: 1px solid #ec282a;
   box-shadow: 0 0 4.5px 0 rgba(255, 52, 29, 0.32);
   background: none;
 }
@@ -225,7 +221,7 @@ button:focus-visible {
 .newsletter {
   width: 167px;
   height: 37px;
-  margin-left: 40px;
+  margin-left: 150px;
 }
 
 .arrow-left,
@@ -239,8 +235,8 @@ button:focus-visible {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  border: 0.2px solid var(--neutral-white-100, #fff);
-  background: var(--neutral-white-18, rgba(255, 255, 255, 0.18));
+  border: 0.2px solid #fff;
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .hero-image,
@@ -309,7 +305,7 @@ button:focus-visible {
 .text-video,
 .text-albums {
   font-family: "pf-fuel-grime", sans-serif;
-  font-size: var(--type-65, 65px);
+  font-size: 65px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -350,15 +346,15 @@ button:focus-visible {
 }
 .carousel-section .artist-name {
   font-family: "pf-fuel-grime", sans-serif;
-  font-size: var(--type-49, 30px);
+  font-size: 30px;
   font-style: normal;
-  line-height: var(--Space-space-50, 50px);
+  line-height: 50px;
   text-transform: uppercase;
   margin: 0 0 20px;
 }
 .carousel-section .artist-genre {
   font-family: "cherry-blossoms-tight", sans-serif;
-  font-size: var(--type-21, 21px);
+  font-size: 21px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -506,7 +502,7 @@ a:hover {
 .text-a,
 .text-c {
   font-family: "cherry-blossoms-tight", sans-serif;
-  color: var(--Primary-red-100, #c90202);
+  color: #c90202;
   font-size: var(--type-65, 65px);
   font-style: normal;
   font-weight: 500;
@@ -519,7 +515,7 @@ a:hover {
 .text-contact,
 .text-about-doechii {
   font-family: "pf-fuel-grime", sans-serif;
-  font-size: var(--type-49, 49px);
+  font-size: 49px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -578,7 +574,7 @@ a:hover {
 .doechii-tours {
   display: block;
   margin: 0 auto;
-  max-width: 820px;
+  max-width: 950px;
   width: 100%;
 }
 .tour {
@@ -698,18 +694,22 @@ footer {
 .email-form {
   display: flex;
 }
-
+/* Tours */
 @media (max-width: 700px) {
   .tour-1 {
-    flex-direction: column;
-    height: auto;
     gap: 12px;
     padding: 12px 0;
-    align-items: flex-start;
   }
 }
-
+/* carousels */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .arrow-left {
+    margin-right: 2rem;
+  }
+  .arrow-right {
+    margin-left: 2rem;
+  }
+
   h2 {
     margin-bottom: 32px;
   }
@@ -799,15 +799,6 @@ footer {
     padding: 0 14px 5px;
     transform: translateY(calc(100% - 42px));
     -webkit-transform: translateY(calc(100% - 42px));
-  }
-}
-
-@media (min-width: 900px) {
-  .arrow-left {
-    margin-right: 2rem;
-  }
-  .arrow-right {
-    margin-left: 2rem;
   }
 }
 
@@ -1128,7 +1119,7 @@ footer {
 
   .img-albums {
     width: 250px;
-    height: 220px;
+    height: 250px;
   }
 
   .abaut-us {
@@ -1161,7 +1152,8 @@ footer {
   }
 
   .doechii-tours {
-    max-width: 600px;
+    max-width: 820px;
+    width: 100%;
   }
 
   footer {
